@@ -24,6 +24,18 @@ public abstract class Entity {
 		return width;
 	}
 	
+	public int getXPos() {
+		return xPos;
+	}
+	
+	public int getYPos() {
+		return yPos;
+	}
+	
+	public String getImgPath() {
+		return imgPath;
+	}
+	
 	public void setHeight(int newHeight) {
 		height = newHeight;
 	}
@@ -31,6 +43,20 @@ public abstract class Entity {
 	public void setWidth(int newWidth) {
 		width = newWidth;
 	}
+	
+	public void setXPos(int newXPos) {
+		xPos = newXPos;
+	}
+	
+	public void setYPos(int newYPos) {
+		yPos = newYPos;
+	}
+	
+	public void setImgPath(String newImgPath) {
+		imgPath = newImgPath;
+	}
+	
+	
 	
 	
 }

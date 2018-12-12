@@ -10,7 +10,11 @@ public class TestPlayer extends Entity{
 	}
 
 	public void displayHeight() {
-		System.out.print(getHeight());
+		System.out.println(getHeight());
+	}
+	
+	public void displayImgPath() {
+		System.out.println(getImgPath());
 	}
 	
 	

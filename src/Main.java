@@ -5,6 +5,7 @@ public class Main {
 		TestPlayer player = new TestPlayer(0,0,50,50,"image.png");
 		
 		player.displayHeight();
+		player.displayImgPath();
 		
 	}
 
