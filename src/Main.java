@@ -9,21 +9,22 @@ public class Main extends JFrame{
 	private static final Dimension screensize = new Dimension(WIDTH,HEIGHT);
 
 	Main(){
-		this.setTitle("CS:2D");
-		this.setSize(screensize);
-		this.setResizable(false);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setVisible(true);	
+		
 	}
 	
 	
 	public static void main(String[] args) {
-		TestPlayer player = new TestPlayer(0,0,50,50,"image.png");
 		
-		Main frame = new Main();
+		JFrame frame = new JFrame();	
 		
-		player.displayHeight();
-		player.displayImgPath();
+		frame.setTitle("CS:2D");
+		frame.setSize(screensize);
+		frame.setResizable(false);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);	
+		
+		
+		frame.add(new DisplayPanel());
 		
 	}
 
