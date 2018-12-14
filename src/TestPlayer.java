@@ -29,16 +29,16 @@ public class TestPlayer extends Entity{
 	
 	void movePlayer() {
 		if(KeyInput.Keys[0] == true) {
-			setYPos(getYPos() - 1);
+			setYPos(getYPos() - 2);
 		}
 		if(KeyInput.Keys[1] == true) {
-			setXPos(getXPos() - 1);
+			setXPos(getXPos() - 2);
 		}
 		if(KeyInput.Keys[2] == true) {
-			setYPos(getYPos() + 1);
+			setYPos(getYPos() + 2);
 		}
 		if(KeyInput.Keys[3] == true) {
-			setXPos(getXPos() + 1);
+			setXPos(getXPos() + 2);
 		}
 		
 	}
