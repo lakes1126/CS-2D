@@ -1,4 +1,4 @@
-
+package engine;
 public abstract class Entity {
 
 	private int xPos;

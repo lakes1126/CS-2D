@@ -1,5 +1,7 @@
+package engine;
 import javax.swing.JFrame;
 import java.awt.Dimension;
+import java.io.IOException;
 
 
 public class Main extends JFrame{
@@ -13,7 +15,12 @@ public class Main extends JFrame{
 	}
 	
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
+		//TestNetwork network = new TestNetwork();
+		//network.setup();
+		//network.testMessage();
+		//network.tearDown();
+		
 		
 		JFrame frame = new JFrame();	
 		
@@ -25,6 +32,8 @@ public class Main extends JFrame{
 		
 		
 		frame.add(new DisplayPanel());
+		
+		
 		
 	}
 
