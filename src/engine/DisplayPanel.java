@@ -16,30 +16,34 @@ public class DisplayPanel extends JPanel {
 	
 	public DisplayPanel() {
 		this.addKeyListener(keyInput);
-		
+		this.setDoubleBuffered(true);
 	}
 	
 	
 	public void paintComponent(Graphics g) {
 		g.clearRect(0, 0, 2000, 2000);
 		
+		
 		player.movePlayer();
 		player.drawPlayer(g);
 		
-		sleepRefresh();
 		this.setFocusable(true);
 		this.requestFocusInWindow();
 		
+		sleepRefresh();
+		
+		
 	}
 	
-	void sleepRefresh() {
+	public void sleepRefresh() {
 		try {
 			Thread.sleep(1000/30);
 		}catch(Exception e){
 			System.out.println("Problem");
 		}//end try/catch
-		//System.out.println("Running");
+		System.out.println("Running");
 		
+
 		repaint();
 	}
 

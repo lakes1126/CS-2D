@@ -22,13 +22,13 @@ public class TestPlayer extends Entity{
 		System.out.println("Player height = " + getHeight() + " , width = " + getWidth());
 	}
 	
-	void drawPlayer(Graphics g) {
+	public void drawPlayer(Graphics g) {
 		g.setColor(Color.RED);
 		g.drawRect(getXPos(), getYPos(), getWidth(), getHeight());
 		g.fillRect(getXPos(), getYPos(), getWidth(), getHeight());
 	}
 	
-	void movePlayer() {
+	public void movePlayer() {
 		if(KeyInput.Keys[0] == true) {
 			setYPos(getYPos() - 2);
 		}
