@@ -41,7 +41,7 @@ public class DisplayPanel extends JPanel {
 		}catch(Exception e){
 			System.out.println("Problem");
 		}//end try/catch
-		System.out.println("Running");
+		//System.out.println("Running");
 		
 
 		repaint();
