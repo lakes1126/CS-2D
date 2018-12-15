@@ -21,14 +21,19 @@ public class DisplayPanel extends JPanel {
 	
 	
 	public void paintComponent(Graphics g) {
+		
 		g.clearRect(0, 0, 2000, 2000);
 		
 		
 		player.movePlayer();
 		player.drawPlayer(g);
 		
+		
+		
 		this.setFocusable(true);
 		this.requestFocusInWindow();
+		
+		
 		
 		sleepRefresh();
 		
