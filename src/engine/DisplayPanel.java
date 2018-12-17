@@ -42,7 +42,7 @@ public class DisplayPanel extends JPanel {
 	
 	public void sleepRefresh() {
 		try {
-			Thread.sleep(1000/30);
+			Thread.sleep(500/30);
 		}catch(Exception e){
 			System.out.println("Problem");
 		}//end try/catch
